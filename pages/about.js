@@ -14,7 +14,7 @@ export default function About() {
     </Head>
     <main className={styles.main}>
     <Navbar />
-    <Hero eyebrow="Eyebrow" tab1="Design" tab2="Development" tab3="Systems design" subhead="This is a subhead that provides more context for what the page is about" headline="This is an H1 headline for the page" />
+    <Hero eyebrow="About Us" tab1="Design" tab2="Development" tab3="Systems design" subhead="This is a subhead that provides more context for what the page is about" headline="This is an H1 headline for the page" />
     </main>
     </>
 }
