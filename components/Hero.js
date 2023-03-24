@@ -1,6 +1,4 @@
 import styles from '@/styles/Home.module.css';
-import heroImage from "public/about/test-hero.jpg";
-import Image from 'next/image';
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,13 +18,6 @@ export default function Hero(props) {
        <div className={[styles.tab, inter.className].join(' ')}>{tab2}</div>
        <div className={[styles.tab, inter.className].join(' ')}>{tab3}</div>
       </div>
-
-      <Image
-            className={styles.heroImage}
-            src={heroImage}
-            alt="test image"
-            priority
-          />
     </div>
   );
 }

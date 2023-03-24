@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import heroImage from "public/about/test-hero.jpg";
+import Image from 'next/image';
 
 
 export default function About() {
@@ -15,6 +17,12 @@ export default function About() {
     <main className={styles.main}>
     <Navbar />
     <Hero eyebrow="About Us" eyebrowColor="eyebrow-purple" tab1="Design" tab2="Development" tab3="Systems design" subhead="This is a subhead that provides more context for what the page is about" headline="This is an H1 headline for the page" heroImage="heroImage"/>
+    <Image
+      className={styles.heroImage}
+      src={heroImage}
+      alt="test image"
+      priority
+    />
     </main>
     </>
 }
