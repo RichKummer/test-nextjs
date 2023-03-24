@@ -4,12 +4,12 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Hero(props) {
-  const {eyebrow, headline, subhead, tab1, tab2, tab3} = props;
+  const {eyebrow, eyebrowColor, headline, subhead, tab1, tab2, tab3} = props;
   const eyebrowUpper = eyebrow.toUpperCase();
 
   return (
     <div className={styles.hero}>
-      <div className={[styles.eyebrow, inter.className].join(' ')}>{eyebrowUpper}</div>
+      <div className={[styles.eyebrow, styles[props.eyebrowColor], inter.className].join(' ')}>{eyebrowUpper}</div>
       <h1 className={[styles.h1, inter.className].join(' ')}>{headline}</h1>
 
       <div className={[styles.subhead, inter.className].join(' ')}>{subhead}</div>

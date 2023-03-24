@@ -54,8 +54,17 @@
 
 .eyebrow {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.eyebrow-purple {
+  color: #6158eb;
+}
+
+.eyebrow-teal {
+  color: #03747C;
 }
 
 .h1 {

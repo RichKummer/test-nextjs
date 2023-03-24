@@ -14,7 +14,7 @@ export default function About() {
     </Head>
     <main className={styles.main}>
     <Navbar />
-    <Hero eyebrow="Other" tab1="React" tab2="Creative" tab3="Other" subhead="A new subhead for a different page in this website" headline="This is a new H1 passed in through props" />
+    <Hero eyebrow="Other" eyebrowColor="eyebrow-teal" tab1="React" tab2="Creative" tab3="Other" subhead="A new subhead for a different page in this website" headline="This is a new H1 passed in through props" />
     </main>
     </>
 }
