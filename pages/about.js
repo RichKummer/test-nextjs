@@ -5,6 +5,7 @@ import Hero from '@/components/Hero'
 import heroImage from "public/about/test-hero.jpg"
 import Image from 'next/image'
 import Button from '@/components/Button'
+import Link from 'next/link'
 
 
 export default function About() {
@@ -25,8 +26,12 @@ export default function About() {
       priority
     />
     <grid>
-    <Button type="primary">Primary</Button>
-    <Button type="secondary">Secondary</Button>
+    <Link href="/other" passHref>
+      <Button type="primary">Primary</Button>
+    </Link>
+    <Link href="/" passHref>
+      <Button type="secondary" href="/other">Secondary</Button>
+    </Link>
     </grid>
     </main>
     </>
