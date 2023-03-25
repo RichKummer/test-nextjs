@@ -3,7 +3,8 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import heroImage from "public/other/other-hero.png";
-import Image from 'next/image';
+import Image from 'next/image'
+import Button from '@/components/Button'
 
 
 export default function About() {
@@ -23,6 +24,10 @@ export default function About() {
       alt="test image"
       priority
     />
+    <grid>
+      <Button type="primary">Primary</Button>
+      <Button type="secondary">Secondary</Button>
+    </grid>
     </main>
     </>
 }

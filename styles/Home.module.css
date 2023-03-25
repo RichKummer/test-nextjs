@@ -106,6 +106,51 @@
   display: block;
 }
 
+.btnPrimary {
+  background-color: #6158eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 32px;
+  margin: auto;
+}
+
+.btnSecondary {
+  background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #6158EB !important;
+    color: #6158EB;
+    border: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 11px 32px;
+    margin: auto;
+}
+
+.btnPrimary:hover {
+  -ms-transform: translate(0, -2px); /* IE 9 */
+  -webkit-transform: translate(0, -2px); /* Safari */
+  transform: translate(0, -2px);
+  transition: 0.3s;
+  background: #6040e6; 
+  box-shadow: 0px 2px 8px rgb(223, 223, 226);
+}
+
+.btnSecondary:hover {
+  -ms-transform: translate(0, -2px); /* IE 9 */
+  -webkit-transform: translate(0, -2px); /* Safari */
+  transform: translate(0, -2px);
+  transition: 0.3s;
+  color: #6040e6; 
+  background-color: #DEDBFF; 
+  box-shadow: 0px 2px 8px rgb(223, 223, 226);
+  border: 2px solid #6040e6  !important;
+}
+
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
