@@ -21,7 +21,7 @@ export default function About() {
     <Image
       className={styles.heroImage}
       src={heroImage}
-      alt="test image"
+      alt="Other page hero image"
       priority
     />
     <grid>
