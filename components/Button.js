@@ -15,6 +15,6 @@ export default function Button(props) {
   }
 
   return (
-    <button href={href} className={[styles[btnType], inter.className].join(' ')}>{props.children}</button>
+    <button href={href} className={[styles[btnType],[styles.btn],inter.className].join(' ')}>{props.children}</button>
   );
 }

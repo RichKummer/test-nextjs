@@ -2,9 +2,12 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import heroImage from "public/other/other-hero.png";
+import heroImage from "public/other/other-hero.png"
 import Image from 'next/image'
-import Button from '@/components/Button'
+import ButtonWrapper from '@/components/ButtonWrapper'
+import { Inter } from 'next/font/google' 
+
+const inter = Inter({ subsets: ['latin'] })
 
 
 export default function About() {
@@ -15,7 +18,7 @@ export default function About() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className={styles.main}>
+    <main className={[styles.main, inter.className].join(' ')}>
     <Navbar />
     <Hero eyebrow="Other" eyebrowColor="eyebrow-teal" tab1="React" tab2="Creative" tab3="Other" subhead="A new subhead for a different page in this website" headline="This is a new H1 passed in through props" />
     <Image
@@ -25,9 +28,12 @@ export default function About() {
       priority
     />
     <grid>
-      <Button type="primary">Primary</Button>
-      <Button type="secondary">Secondary</Button>
+    <ButtonWrapper href1="/about" label1="About" href2="/other" label2="Other">Test</ButtonWrapper>
     </grid>
+    <h2 className={styles.h2}>Headline level two</h2>
+
+    <p className={styles.p}>Arcu dui vivamus arcu felis bibendum ut tristique. Velit aliquet sagittis id consectetur purus ut. Bibendum arcu vitae elementum curabitur vitae nunc. Massa placerat duis ultricies lacus sed turpis tincidunt. Felis eget nunc lobortis mattis aliquam faucibus. Sit amet massa vitae tortor condimentum lacinia quis vel eros. Consequat nisl vel pretium lectus quam id leo. Amet tellus cras adipiscing enim eu. Dictum sit amet justo donec enim diam. Purus viverra accumsan in nisl nisi scelerisque eu. Amet volutpat consequat mauris nunc congue nisi vitae.</p>
+    <p className={styles.p}>Facilisis magna etiam tempor orci eu lobortis elementum nibh. At tempor commodo ullamcorper a lacus vestibulum sed. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Varius sit amet mattis vulputate enim nulla aliquet. Integer eget aliquet nibh praesent tristique magna sit amet purus. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Gravida quis blandit turpis cursus in hac habitasse platea. At tellus at urna condimentum mattis pellentesque id. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Eu ultrices vitae auctor eu augue ut.</p>
     </main>
     </>
 }
