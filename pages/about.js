@@ -5,7 +5,8 @@ import Hero from '@/components/Hero'
 import heroImage from "public/about/test-hero.jpg"
 import Image from 'next/image'
 import { Inter } from 'next/font/google' 
-import ButtonWrapper from '@/components/ButtonWrapper'
+import BottomBanner from '@/components/BottomBanner'
+import {Container, Row, Col} from 'react-grid-system'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,13 +27,16 @@ export default function About() {
       alt="About Us hero image"
       priority
     />
-    <grid>
-    <ButtonWrapper href1="/other" label1="Other" href2="/about" label2="About">Test</ButtonWrapper>
-    </grid>
+   
+    <Container>
+      <h2 className={styles.h2}>Headline level two</h2>
+      <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p className={styles.p}>Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Scelerisque felis imperdiet proin fermentum leo vel. Amet nisl suscipit adipiscing bibendum est ultricies integer. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Non consectetur a erat nam. Mauris ultrices eros in cursus turpis. Consectetur a erat nam at lectus urna duis convallis convallis. Tortor pretium viverra suspendisse potenti nullam ac tortor. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Pellentesque habitant morbi tristique senectus et. Sagittis nisl rhoncus mattis rhoncus urna neque. Sed lectus vestibulum mattis ullamcorper velit sed. Quis eleifend quam adipiscing vitae proin. At tellus at urna condimentum mattis pellentesque id nibh tortor. Sed cras ornare arcu dui vivamus arcu felis bibendum. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Quis blandit turpis cursus in.</p>
+      <BottomBanner href1="/other" label1="Other" href2="/about" label2="About us"></BottomBanner>
+    </Container>
 
-    <h2 className={styles.h2}>Headline level two</h2>
-    <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p className={styles.p}>Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Scelerisque felis imperdiet proin fermentum leo vel. Amet nisl suscipit adipiscing bibendum est ultricies integer. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Non consectetur a erat nam. Mauris ultrices eros in cursus turpis. Consectetur a erat nam at lectus urna duis convallis convallis. Tortor pretium viverra suspendisse potenti nullam ac tortor. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Pellentesque habitant morbi tristique senectus et. Sagittis nisl rhoncus mattis rhoncus urna neque. Sed lectus vestibulum mattis ullamcorper velit sed. Quis eleifend quam adipiscing vitae proin. At tellus at urna condimentum mattis pellentesque id nibh tortor. Sed cras ornare arcu dui vivamus arcu felis bibendum. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Quis blandit turpis cursus in.</p>
+    
+      
     </main>
     </>
 }

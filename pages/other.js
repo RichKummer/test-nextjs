@@ -4,7 +4,8 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import heroImage from "public/other/other-hero.png"
 import Image from 'next/image'
-import ButtonWrapper from '@/components/ButtonWrapper'
+import BottomBanner from '@/components/BottomBanner'
+import {Container, Row, Col} from 'react-grid-system'
 import { Inter } from 'next/font/google' 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,13 +28,18 @@ export default function About() {
       alt="Other page hero image"
       priority
     />
-    <grid>
-    <ButtonWrapper href1="/about" label1="About" href2="/other" label2="Other">Test</ButtonWrapper>
-    </grid>
-    <h2 className={styles.h2}>Headline level two</h2>
+   
 
+    <Container>
+    <h2 className={styles.h2}>Headline level two</h2>
     <p className={styles.p}>Arcu dui vivamus arcu felis bibendum ut tristique. Velit aliquet sagittis id consectetur purus ut. Bibendum arcu vitae elementum curabitur vitae nunc. Massa placerat duis ultricies lacus sed turpis tincidunt. Felis eget nunc lobortis mattis aliquam faucibus. Sit amet massa vitae tortor condimentum lacinia quis vel eros. Consequat nisl vel pretium lectus quam id leo. Amet tellus cras adipiscing enim eu. Dictum sit amet justo donec enim diam. Purus viverra accumsan in nisl nisi scelerisque eu. Amet volutpat consequat mauris nunc congue nisi vitae.</p>
     <p className={styles.p}>Facilisis magna etiam tempor orci eu lobortis elementum nibh. At tempor commodo ullamcorper a lacus vestibulum sed. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Varius sit amet mattis vulputate enim nulla aliquet. Integer eget aliquet nibh praesent tristique magna sit amet purus. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Gravida quis blandit turpis cursus in hac habitasse platea. At tellus at urna condimentum mattis pellentesque id. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Eu ultrices vitae auctor eu augue ut.</p>
+    </Container>
+
+    <grid>
+    <BottomBanner href1="/about" label1="About us" href2="/other" label2="Other"></BottomBanner>
+    </grid>
+    
     </main>
     </>
 }

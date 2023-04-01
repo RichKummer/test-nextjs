@@ -80,6 +80,10 @@
   margin-bottom: 16px;
 }
 
+.bottomBanner h2 {
+  margin-bottom: 8px;
+}
+
 .subhead {
   font-size: 2rem;
   font-weight: 400;
@@ -111,9 +115,11 @@
 }
 
 .heroImage {
-  max-width:100%; 
+  width:100%; 
+  max-width: 1400px;
   height: auto;
   display: block;
+  margin: auto;
   margin-bottom: 64px;
 }
 
@@ -127,6 +133,10 @@
   transition: 0.3s;
 }
 
+.btn:last-of-type {
+  margin-left: 12px;
+}
+
 .p {
   margin-bottom: 16px;
   line-height: 1.5em;
@@ -137,7 +147,6 @@
   background-color: #6158eb;
   color: #fff;
   border: none;
-  margin-right: 12px;
 }
 
 .btnSecondary {
@@ -146,8 +155,6 @@
     border: 2px solid #6158EB !important;
     color: #6158EB;
     transition: 0.3s;
-    
-    
 }
 
 .btnPrimary:hover {
@@ -172,8 +179,17 @@
 
 .buttonWrapper {
   margin-bottom: 24px;
+  float:right;
 }
 
+.bottomBanner {
+  background-color: #F6F7F9;
+  margin-top: 64px;
+  margin-left: -48px;
+  margin-right: -64px;
+  padding: 32px;
+  border-radius: 4px;
+}
 
 
 .card {
@@ -307,6 +323,20 @@
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
+  }
+
+  .btnPrimary {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .buttonWrapper {
+    float:none;
+  }
+  
+  .btnSecondary {
+      width: 100%;
   }
 
   .grid {
