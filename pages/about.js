@@ -6,6 +6,7 @@ import heroImage from "public/about/test-hero.jpg"
 import Image from 'next/image'
 import { Inter } from 'next/font/google' 
 import BottomBanner from '@/components/BottomBanner'
+import BasicCard from '@/components/BasicCard'
 import {Container, Row, Col} from 'react-grid-system'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -35,7 +36,9 @@ export default function About() {
       <BottomBanner href1="/other" label1="Other" href2="/about" label2="About us"></BottomBanner>
     </Container>
 
-    
+    <Container>
+      <BasicCard heading="Sample heading"></BasicCard>
+    </Container>
       
     </main>
     </>
